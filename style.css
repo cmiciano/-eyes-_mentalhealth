@@ -37,3 +37,36 @@ body {
     font-size: 20px;
     letter-spacing: 2px;
   }
+
+
+  .bioName{
+      font-size: 30px;
+      letter-spacing: 3px;
+      text-align: center;
+
+  }
+
+  .bioDescription {
+      font-size: 20px;
+  }
+
+  .bioColumnLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .bioImage {
+    width: 100%;
+    height: 740px;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 60px;
+    left: 61px;
+    overflow: hidden;
+
+  }
