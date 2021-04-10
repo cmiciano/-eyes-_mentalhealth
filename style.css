@@ -41,6 +41,16 @@ body {
     line-height: 2;
   }
 
+  #messageBottom {
+    text-align: center;
+  }
+
+  button {
+    padding: 10px;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
   /* Resources */
 
   .resource {
