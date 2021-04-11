@@ -2,7 +2,6 @@
 
 body {
     font-family: helvetica, arial, sans-serif;
-    margin: 2em;
   }
   
   h1 {
@@ -51,9 +50,28 @@ body {
     color: #CAF4F4;
   }
 
+  /* Home */
+
+  .homePosts {
+    overflow: hidden;
+  }
+
+  .topicName {
+    font-size: 30px;
+    position: relative;
+    top: 35%;
+  }
+
+  #topicPost {
+    text-align: center;
+  }
+
   /* PostItMessage */
 
   #postItMessage {
+  	max-height: 70%;
+  	overflow-y: scroll;
+  	margin-bottom: 50px;
     padding: 5% 10%;
     font-size: 24px;
     text-align: center;
@@ -61,13 +79,38 @@ body {
   }
 
   #messageBottom {
-    text-align: center;
+   text-align: center;
+
   }
 
+
   button {
+  	
+  	background-color: transparent;
+  	display: inline-block;
     padding: 10px;
     margin-right: 15%;
     margin-left: 15%;
+    border: 0.16em solid #223445;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #223445;
+    text-align: center;
+    transition: all 0.15s;
+    cursor: pointer;
+  }
+
+  button:hover {
+  	color: #798D97;
+  	border-color: #798D97;
+  }
+
+  button:active {
+  	color: #223445;
+  	border-color: #223445;
   }
 
   /* Resources */
