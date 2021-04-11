@@ -2,7 +2,6 @@
 
 body {
     font-family: helvetica, arial, sans-serif;
-    margin: 2em;
   }
   
   h1 {
@@ -30,6 +29,41 @@ body {
     background-color: #CAF4F4;
     margin: 50px 15px;
     box-shadow: 0px 12px 12px rgba(28, 65, 84, 0.1), 0px 24px 24px rgba(28, 65, 84, 0.08), 0px 64px 48px rgba(28, 65, 84, 0.08), 0px 64px 64px rgba(28, 65, 84, 0.04);
+  }
+
+  .nav {
+    text-align: center;
+    overflow: hidden;
+    width:100%;
+  }
+
+  .nav a {
+    text-align: center;
+    padding: 14px 35px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .nav a:hover {
+    color: #CAF4F4;
+  }
+
+  /* Home */
+
+  .homePosts {
+    overflow: hidden;
+  }
+
+  .topicName {
+    font-size: 30px;
+    position: relative;
+    top: 35%;
+  }
+
+  #topicPost {
+    text-align: center;
   }
 
   /* PostItMessage */
@@ -131,3 +165,35 @@ body {
     overflow: hidden;
 
   }
+
+
+  .smallpost:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  
+
+  #content1 {
+    width: 300px; height: 300px;
+    transition: all 1s ease-in-out;
+  }
+
+
+  #content2 {
+    width: 300px; height: 300px;
+    transition: all 1s ease-in-out;
+  }
+
+
+  #content3 {
+    width: 300px; height: 300px;
+    transition: all 1s ease-in-out;
+  }
+
+
+  #content4 {
+    width: 300px; height: 300px;
+    transition: all 1s ease-in-out;
+  }
+
