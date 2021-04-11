@@ -44,3 +44,10 @@ try {
     document.getElementById("resourceHeadingText-3").innerText = card_desc[index_val + 3]
 }
 catch (error) {}
+
+function myFunction() {
+    console.log('myFunction')
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    $('.resource').toggleClass('smallpost')
+  }

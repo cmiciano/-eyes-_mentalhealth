@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     
     <!-- import the webpage's javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/script.js" defer></script>
   </head>  
   <body>
@@ -23,29 +24,30 @@
     </div>
 
     <div class="row">
-      <div class="smallpost resource">
+      <div class="smallpost resource" onclick="myFunction()">
         <p>
           <span id="resourceHeadingText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae augue nibh. 
             Vestibulum a auctor nunc, nec tristique sapien. Cras consequat turpis eget ante faucibus blandit. 
           </span>
+          <div class="popuptext" id="myPopup">A Simple Popup!</div>
         </p>
  
       </div>
-      <div class="smallpost resource">
+      <div class="smallpost resource" onclick="myFunction()">
          <p>
             <span id="resourceHeadingText-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae augue nibh. 
               Vestibulum a auctor nunc, nec tristique sapien. Cras consequat turpis eget ante faucibus blandit. 
             </span>
         </p>
       </div>
-      <div class="smallpost resource">
+      <div class="smallpost resource" onclick="myFunction()">
         <p>
             <span id="resourceHeadingText-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae augue nibh. 
               Vestibulum a auctor nunc, nec tristique sapien. Cras consequat turpis eget ante faucibus blandit. 
             </span>
         </p>
       </div>
-      <div class="smallpost resource">
+      <div class="smallpost resource" onclick="myFunction()">
         <p>
             <span id="resourceHeadingText-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae augue nibh. 
               Vestibulum a auctor nunc, nec tristique sapien. Cras consequat turpis eget ante faucibus blandit. 
@@ -54,6 +56,8 @@
       </div>
      
     </div>
-
+    <div class="popup" onclick="myFunction()">
+      <div class="popuptext" id="myPopup"></div>
+    </div>
   </body>
 </html>
