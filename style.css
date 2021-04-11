@@ -74,9 +74,13 @@ body {
   	border-color: #798D97;
   }
 
-  button:active {
+  button:active, a:hover {
   	color: #223445;
   	border-color: #223445;
+  }
+
+  a:link, a:visited, a:active {
+  	color: #223445;
   }
 
   /* Resources */
