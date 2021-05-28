@@ -1,7 +1,7 @@
 /* CSS files add styling rules to your content */
 
 body {
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   
   h1 {
@@ -124,25 +124,25 @@ body {
   }
 
   .resourceName {
-    font-size: 30px;
+    font-size: 26px;
     letter-spacing: 3px;
   }
 
   .resourceHeading {
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
   }
 
 
   .bioName{
-      font-size: 30px;
+      font-size: 18px;
       letter-spacing: 3px;
       text-align: center;
 
   }
 
   .bioDescription {
-      font-size: 20px;
+      font-size: 16px;
   }
 
   .bioColumnLayout {
@@ -166,7 +166,6 @@ body {
 
   }
 
-
   .smallpost:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
@@ -179,21 +178,39 @@ body {
     transition: all 1s ease-in-out;
   }
 
+/* Popup container - can be anything you want */
+.resource {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-  #content2 {
-    width: 300px; height: 300px;
-    transition: all 1s ease-in-out;
-  }
+/* The actual popup */
+.resource .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
 
-
-  #content3 {
-    width: 300px; height: 300px;
-    transition: all 1s ease-in-out;
-  }
-
-
-  #content4 {
-    width: 300px; height: 300px;
-    transition: all 1s ease-in-out;
-  }
-
+/* Toggle this class - hide and show the popup */
+.resource .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.popup.active{
+color: red;
+}
